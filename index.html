@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Boardmart Bulawayo — Board Cutting, Edging & Hardware</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--espresso:#2A1E15;--espresso2:#3A2A1D;--tan:#C99B5E;--tan-dim:#A87C42;--steel:#6B655C;--paper:#F1ECE1;--paper-dim:#E4DCC9;--ink:#2A1E15;--mute:#6B655C;--line:rgba(42,30,21,.14);--line-lt:rgba(241,236,225,.16);
+--f1:'Space Grotesk',sans-serif;--f2:'Inter',sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+body{font-family:var(--f2);background:var(--paper);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3{font-family:var(--f1);font-weight:700;line-height:1.04;letter-spacing:-.01em}
+a{color:inherit;text-decoration:none}img{display:block;max-width:100%}button{font:inherit;cursor:pointer}
+.w{max-width:1180px;margin:0 auto;padding:0 28px}
+svg.defs{position:absolute;width:0;height:0}
+/* nav */
+header{position:fixed;top:0;left:0;right:0;z-index:60;background:rgba(42,30,21,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line-lt);padding-top:env(safe-area-inset-top,0px)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px;color:var(--paper)}
+.logo{display:flex;align-items:center;gap:11px;font:700 1.28rem var(--f1)}
+.logo i{width:36px;height:36px;border-radius:6px;background:var(--tan);display:grid;place-items:center;color:var(--espresso)}
+.logo small{display:block;font:500 .6rem var(--f2);letter-spacing:.13em;text-transform:uppercase;color:var(--tan);margin-top:3px}
+nav{display:flex;gap:30px;align-items:center;font-size:.95rem;color:#C9BEA9}nav a:hover{color:var(--paper)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:4px;font-weight:600;transition:.2s;border:1px solid transparent;font-size:.98rem}
+.b1{background:var(--tan);color:var(--espresso)}.b1:hover{background:#DBAE72;transform:translateY(-2px)}
+.b2{border-color:var(--line-lt);color:var(--paper)}.b2:hover{border-color:#C9BEA9;background:rgba(255,255,255,.05)}
+.burger{display:none;background:none;border:0;width:40px;height:40px;position:relative}
+.burger:before{content:"";position:absolute;left:9px;right:9px;top:14px;height:2px;background:var(--paper);box-shadow:0 7px 0 var(--paper),0 14px 0 var(--paper)}
+.mp{display:none;position:fixed;inset:74px 0 0;background:var(--espresso);z-index:59;padding:32px 28px;flex-direction:column;gap:22px}.mp.o{display:flex}
+.mp a{color:var(--paper);font:700 1.7rem var(--f1);padding-bottom:16px;border-bottom:1px solid var(--line-lt)}
+/* hero */
+.hero{position:relative;background:var(--espresso);color:var(--paper);padding:150px 0 0;overflow:hidden}
+.cutplan{position:absolute;inset:0;width:100%;height:100%;opacity:.35}
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-bottom:70px}
+.tag{display:inline-flex;align-items:center;gap:9px;font-size:.88rem;color:var(--tan);font-weight:600;margin-bottom:22px}
+.tag:before{content:"";width:7px;height:7px;background:var(--tan)}
+h1{font-size:clamp(2.6rem,5.6vw,4.4rem);max-width:12ch}h1 em{font-style:normal;color:var(--tan)}
+.lede{font-size:1.13rem;color:#CFC5B4;max-width:46ch;margin:24px 0 34px}
+.ctas{display:flex;gap:14px;flex-wrap:wrap}
+.photo-card{position:relative;border-radius:6px;overflow:hidden;aspect-ratio:4/5;border:1px solid var(--line-lt)}
+.photo-card img{width:100%;height:100%;object-fit:cover;filter:saturate(.85) contrast(1.05) brightness(.82)}
+.photo-card figcaption{position:absolute;left:0;right:0;bottom:0;padding:20px;font:600 .95rem var(--f1);background:linear-gradient(0deg,rgba(42,30,21,.92),transparent 65%)}
+.strip{position:relative;z-index:2;border-top:1px solid var(--line-lt)}
+.strip .w{display:flex;flex-wrap:wrap}
+.strip div{flex:1 1 220px;padding:20px 26px;border-right:1px solid var(--line-lt);display:flex;align-items:center;gap:11px;font-size:.88rem;color:#C9BEA9;font-weight:500}
+.strip div:last-child{border-right:0}.strip svg{width:18px;height:18px;color:var(--tan);flex:0 0 auto}
+/* sections */
+section{padding:104px 0}
+.sh{max-width:720px;margin-bottom:54px}.sh .k{display:block;color:var(--tan-dim);font-weight:700;font-size:.86rem;margin-bottom:12px}
+.sh h2{font-size:clamp(2.1rem,4.2vw,3.3rem)}.sh p{color:var(--mute);margin-top:16px;font-size:1.04rem}
+.rv{opacity:0;transform:translateY(20px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+/* services — three big rows */
+.svc-row{display:grid;grid-template-columns:.95fr 1.05fr;gap:50px;align-items:center;padding:46px 0;border-top:1px solid var(--line)}
+.svc-row:nth-child(even){grid-template-columns:1.05fr .95fr}
+.svc-row:nth-child(even) .svc-photo{order:2}
+.svc-photo{aspect-ratio:5/4;border-radius:6px;overflow:hidden}
+.svc-photo img{width:100%;height:100%;object-fit:cover;filter:saturate(.9) contrast(1.03)}
+.svc-num{font:600 .85rem var(--f1);color:var(--tan-dim);margin-bottom:14px}
+.svc-row h3{font-size:1.9rem;margin-bottom:14px}
+.svc-row p{color:var(--mute);font-size:1.02rem;max-width:48ch}
+.svc-list{margin-top:20px;display:flex;flex-wrap:wrap;gap:10px}
+.svc-chip{border:1px solid var(--line);border-radius:99px;padding:8px 16px;font-size:.87rem;font-weight:500;color:var(--ink);background:#fff}
+/* why */
+.why-wrap{background:var(--paper-dim)}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.why-cell{background:var(--paper-dim);padding:36px 28px;display:flex;flex-direction:column;gap:16px}
+.why-cell svg{width:26px;height:26px;color:var(--tan-dim)}
+.why-cell h3{font-size:1.15rem;text-transform:none}.why-cell p{font-size:.92rem;color:var(--mute)}
+/* location */
+.loc-wrap{background:var(--espresso);color:var(--paper)}
+.loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.loc-copy .k{color:var(--tan)}
+.loc-copy h2{color:var(--paper);font-size:clamp(2rem,3.8vw,2.8rem)}
+.loc-copy p{color:#CFC5B4;margin:18px 0 28px;max-width:44ch}
+.hours{border-top:1px solid var(--line-lt);margin-top:6px}
+.hours div{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line-lt);font-size:.94rem;color:#CFC5B4}
+.hours div b{color:var(--paper);font-weight:500}
+.loc-map{position:relative;aspect-ratio:1/1}
+.loc-map svg{width:100%;height:100%}
+/* contact */
+.contact-wrap{background:var(--paper)}
+.cg{display:grid;grid-template-columns:.85fr 1.15fr;gap:0;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.ci{background:var(--espresso);color:var(--paper);padding:52px 44px}
+.ci h3{font-size:1.8rem;margin-bottom:8px}.ci>p{color:#C9BEA9;margin-bottom:32px;font-size:.97rem}
+.ln{display:flex;gap:15px;padding:17px 0;border-top:1px solid var(--line-lt)}.ln:last-of-type{border-bottom:1px solid var(--line-lt)}
+.ln svg{width:19px;height:19px;color:var(--tan);flex:0 0 auto;margin-top:2px}
+.ln b{display:block;font-size:.97rem}.ln span{font-size:.9rem;color:#B9AE99}
+.wa{margin-top:28px;width:100%;justify-content:center;background:#25D366;color:#04250f}.wa:hover{background:#3BE07A}
+.cf{padding:52px 44px}
+.cf h3{font-size:1.4rem;margin-bottom:8px}.cf>p{color:var(--mute);margin-bottom:28px;font-size:.97rem}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}.fd{display:flex;flex-direction:column;gap:7px}.fd.f{grid-column:1/3}
+label{font-size:.8rem;font-weight:600;color:var(--mute)}
+input,select,textarea{border:1px solid var(--line);background:#fff;padding:13px 14px;font:inherit;border-radius:4px;color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--tan-dim)}textarea{min-height:92px;resize:vertical}
+.submit{background:var(--espresso);color:#fff;padding:15px 30px;border:none;border-radius:4px;font-weight:600;font-size:.96rem;margin-top:4px}
+.submit:hover{background:#1C130C}
+.fine{font-size:.8rem;color:var(--mute);margin-top:13px}
+.ok{display:none;margin-top:16px;padding:16px;border-radius:4px;background:rgba(61,220,151,.12);border:1px solid rgba(61,220,151,.4);color:#177a44;font-size:.92rem}.ok.s{display:block}
+footer{background:var(--espresso);color:#B9AE99;padding:36px 0 90px;font-size:.84rem}
+footer .w{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.sticky{display:none}
+@media(max-width:980px){
+nav{display:none}.burger{display:block}.w{padding:0 20px}section{padding:68px 0}
+.hero-grid{grid-template-columns:1fr;gap:34px;padding-bottom:44px}.hero{padding-top:120px}
+.strip .w{flex-direction:column}.strip div{border-right:0;border-bottom:1px solid var(--line-lt)}
+.svc-row,.svc-row:nth-child(even){grid-template-columns:1fr;gap:24px}.svc-row:nth-child(even) .svc-photo{order:0}
+.why-grid{grid-template-columns:1fr 1fr}
+.loc-grid{grid-template-columns:1fr;gap:36px}
+.cg{grid-template-columns:1fr}.ci,.cf{padding:36px 22px}.fr{grid-template-columns:1fr}.fd.f{grid-column:1}
+.sticky{display:flex;position:fixed;left:14px;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:50;justify-content:center;gap:10px;background:#25D366;color:#04250f;font-weight:700;border-radius:8px;padding:16px;box-shadow:0 14px 40px -8px rgba(0,0,0,.6)}
+}
+@media(max-width:560px){.why-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<svg class="defs"><defs>
+<pattern id="cut" width="220" height="140" patternUnits="userSpaceOnUse">
+<rect x="0" y="0" width="220" height="140" fill="none" stroke="#C99B5E" stroke-width="1" opacity=".5"/>
+<rect x="4" y="4" width="130" height="60" fill="none" stroke="#C99B5E" stroke-width="1" opacity=".4"/>
+<rect x="138" y="4" width="78" height="60" fill="none" stroke="#C99B5E" stroke-width="1" opacity=".4"/>
+<rect x="4" y="68" width="60" height="68" fill="none" stroke="#C99B5E" stroke-width="1" opacity=".4"/>
+<rect x="68" y="68" width="68" height="68" fill="none" stroke="#C99B5E" stroke-width="1" opacity=".4"/>
+<rect x="140" y="68" width="76" height="68" fill="none" stroke="#C99B5E" stroke-width="1" opacity=".4"/>
+</pattern>
+</defs></svg>
+
+<header><div class="w nav">
+<a href="#top" class="logo"><i><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 12h18M12 3v18"/></svg></i><span>Boardmart<small>Bulawayo</small></span></a>
+<nav><a href="#services">Services</a><a href="#why">Why us</a><a href="#location">Location</a><a href="#contact">Contact</a><a class="btn b1" style="padding:11px 22px" href="tel:+263789228046">Call now</a></nav>
+<button class="burger" id="bg" aria-label="Menu"></button></div>
+<div class="mp" id="mp"><a href="#services">Services</a><a href="#why">Why us</a><a href="#location">Location</a><a href="#contact">Contact</a></div></header>
+
+<main id="top">
+<section class="hero">
+<svg class="cutplan" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="500" fill="url(#cut)"/></svg>
+<div class="w hero-grid">
+<div>
+<div class="tag">Belmont Industrial Area, Bulawayo</div>
+<h1>Boards cut, edged &amp; <em>hardware</em> supplied.</h1>
+<p class="lede">Boardmart Bulawayo is a manufacturer and supplier serving cabinet makers, joiners and contractors — precise cuts, clean edging, and the hardware to finish the job.</p>
+<div class="ctas"><a class="btn b1" href="#contact">Request a quote</a><a class="btn b2" href="tel:+263789228046">078 922 8046</a></div>
+</div>
+<figure class="photo-card rv in"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Panel_saw.jpg?width=800" alt="Panel saw cutting board to size"><figcaption>Cut to size, on request</figcaption></figure>
+</div>
+<div class="strip"><div class="w">
+<div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M7 7V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/></svg>Manufacturer &amp; supplier</div>
+<div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5 3.8 8.7 9 9 5.2-.3 9-4 9-9V7l-9-5z"/></svg>Corner Doncaster Rd &amp; Coventry St</div>
+<div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>Open Mon–Sat</div>
+</div></div>
+</section>
+
+<section id="services"><div class="w">
+<div class="sh rv"><span class="k">What we do</span><h2>Cutting, edging &amp; hardware</h2><p>Three services, done properly — bring your measurements or your existing panels.</p></div>
+
+<div class="svc-row rv">
+<div class="svc-photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sheet_cutting_machine.JPG?width=700" alt="Sheet cutting machine cutting board to size"></div>
+<div><div class="svc-num">01 — Cutting</div><h3>Board cut to size</h3><p>Panels cut to your exact measurements, straight and clean, ready to assemble.</p>
+<div class="svc-list"><span class="svc-chip">Chipboard</span><span class="svc-chip">MDF</span><span class="svc-chip">Melamine</span><span class="svc-chip">Custom sizes</span></div></div>
+</div>
+
+<div class="svc-row rv">
+<div class="svc-photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Modern_warehouse_with_pallet_rack_storage_system.jpg?width=700" alt="Board stock in the warehouse"></div>
+<div><div class="svc-num">02 — Edging</div><h3>Clean, matched edging</h3><p>Exposed edges finished so they hold up and look right, in a finish that matches your board.</p>
+<div class="svc-list"><span class="svc-chip">PVC edging</span><span class="svc-chip">Iron-on edging</span><span class="svc-chip">Colour-matched</span></div></div>
+</div>
+
+<div class="svc-row rv">
+<div class="svc-photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kitchen_cabinet_hinge,_Frog_hinge_08.JPG?width=700" alt="Cabinet hinge hardware"></div>
+<div><div class="svc-num">03 — Hardware</div><h3>Hardware supply</h3><p>Hinges, handles and drawer fittings to finish cabinets and furniture, sold alongside your board and cutting order.</p>
+<div class="svc-list"><span class="svc-chip">Hinges</span><span class="svc-chip">Handles</span><span class="svc-chip">Drawer runners</span><span class="svc-chip">Fittings</span></div></div>
+</div>
+
+</div></section>
+
+<section id="why" class="why-wrap"><div class="w">
+<div class="sh rv"><span class="k">Why Boardmart</span><h2>Built for cabinet makers &amp; contractors</h2></div>
+<div class="why-grid rv">
+<div class="why-cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12c2-4 6-6 9-6s7 2 9 6c-2 4-6 6-9 6s-7-2-9-6z"/><circle cx="12" cy="12" r="2.4"/></svg><h3>Precision cuts</h3><p>Measured and cut to size, ready for assembly.</p></div>
+<div class="why-cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><h3>One stop for the job</h3><p>Board, cutting, edging and hardware from one supplier.</p></div>
+<div class="why-cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 6 9 17l-5-5"/></svg><h3>Trade &amp; DIY welcome</h3><p>Cabinet makers, contractors and individual customers.</p></div>
+<div class="why-cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 3 7v6c0 5 3.8 8.7 9 9 5.2-.3 9-4 9-9V7l-9-5z"/></svg><h3>Based in Belmont</h3><p>Located in Bulawayo's Belmont Industrial Area.</p></div>
+</div></div></section>
+
+<section id="location" class="loc-wrap"><div class="w loc-grid">
+<div class="loc-copy rv"><span class="k" style="display:block;font-weight:700;font-size:.86rem;margin-bottom:12px">Find us</span>
+<h2>Corner Doncaster Rd &amp; Coventry St, Belmont</h2>
+<p>Boardmart Bulawayo is based in the Belmont Industrial Area — easy to find, easy to load from.</p>
+<div class="hours">
+<div><span>Monday – Friday</span><b>08:00 – 17:00</b></div>
+<div><span>Saturday</span><b>08:00 – 13:00</b></div>
+<div><span>Sunday</span><b>Closed</b></div>
+</div>
+</div>
+<div class="loc-map rv"><svg viewBox="0 0 300 300">
+<circle cx="150" cy="150" r="148" fill="none" stroke="#3A2A1D" stroke-width="1.5"/>
+<circle cx="150" cy="150" r="100" fill="none" stroke="#3A2A1D" stroke-width="1.5"/>
+<circle cx="150" cy="150" r="52" fill="none" stroke="#4A3827" stroke-width="1.5"/>
+<path d="M150 90 c-22 0 -38 16 -38 37 c0 27 38 63 38 63 s38 -36 38 -63 c0 -21 -16 -37 -38 -37z" fill="#C99B5E"/>
+<circle cx="150" cy="127" r="12" fill="#2A1E15"/>
+<text x="150" y="240" text-anchor="middle" fill="#B9AE99" font-family="Inter" font-size="12">Belmont Industrial Area, Bulawayo</text>
+</svg></div>
+</div></section>
+
+<section id="contact" class="contact-wrap"><div class="w">
+<div class="sh rv"><span class="k">Get in touch</span><h2>Request a cutting list quote</h2><p>Send your sizes or bring your cutting list — we'll quote board, cutting, edging and hardware together.</p></div>
+<div class="cg rv"><div class="ci"><h3>Contact</h3><p>Call or WhatsApp during opening hours.</p>
+<div class="ln"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><div><b>078 922 8046</b><span>Call or WhatsApp</span></div></div>
+<div class="ln"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.5-7-11a7 7 0 0 1 14 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><div><b>Belmont Industrial Area</b><span>Corner Doncaster Rd &amp; Coventry St, Bulawayo</span></div></div>
+<a class="btn wa" id="wa" href="https://wa.me/263789228046">Chat on WhatsApp</a></div>
+<div class="cf"><h3>Send a cutting list enquiry</h3><p>We'll come back to you with pricing.</p>
+<form id="f"><div class="fr"><div class="fd"><label>Your name</label><input required placeholder="Name"></div><div class="fd"><label>Phone</label><input required type="tel" placeholder="Your number"></div></div>
+<div class="fr"><div class="fd"><label>What do you need?</label><select><option>Board cut to size</option><option>Edging only</option><option>Hardware (hinges, handles, etc)</option><option>Cutting + edging + hardware</option><option>Not sure yet</option></select></div><div class="fd"><label>Board type</label><input placeholder="e.g. 16mm melamine"></div></div>
+<div class="fr"><div class="fd f"><label>Sizes / cutting list</label><textarea placeholder="List your panel sizes, or describe the job..."></textarea></div></div>
+<button class="submit" type="submit">Send enquiry</button><p class="fine">Concept prototype — the form doesn't send yet.</p><div class="ok" id="ok">Thanks — on the live site this reaches Boardmart directly.</div></form></div></div>
+</div></section>
+</main>
+
+<footer><div class="w"><span>Boardmart Bulawayo · Belmont Industrial Area</span><span>Design concept, not the final site. Photos: Wikimedia Commons contributors (Creative Commons), to be replaced with Boardmart's own.</span></div></footer>
+<a class="sticky" href="https://wa.me/263789228046">Chat on WhatsApp</a>
+<script>
+const $=s=>document.querySelector(s);
+$('#bg').onclick=()=>$('#mp').classList.toggle('o');document.querySelectorAll('#mp a').forEach(a=>a.onclick=()=>$('#mp').classList.remove('o'));
+$('#f').onsubmit=e=>{e.preventDefault();$('#ok').classList.add('s')};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+</script>
+</body></html>
